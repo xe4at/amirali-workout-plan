@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir', Tahoma, Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #2d2d2d;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #404040;
+}
+
+.header-content {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ffffff, #cccccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-header .author {
+    font-size: 1.2em;
+    color: #cccccc;
+    font-weight: 300;
+}
+
+.personal-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    background: linear-gradient(45deg, #363636, #404040);
+    padding: 12px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    min-width: 200px;
+}
+
+.info-item:hover {
+    transform: translateY(-2px);
+}
+
+.info-item .label {
+    color: #cccccc;
+    margin-left: 8px;
+}
+
+.info-item .value {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* فوتر */
+.page-footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #404040;
+}
+
+.page-footer h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 1.8em;
+    background: linear-gradient(45deg, #ffffff, #cccccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.note-item {
+    background: linear-gradient(45deg, #363636, #404040);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.note-item:hover {
+    transform: translateY(-3px);
+}
+
+.note-item h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #505050;
+    padding-bottom: 8px;
+}
+
+.note-item p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.note-item ul {
+    list-style: none;
+    color: #cccccc;
+}
+
+.note-item ul li {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.note-item ul li:before {
+    content: "•";
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #404040;
+}
+
+.copyright p {
+    color: #888888;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .notes-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .note-item {
+        padding: 15px;
+    }
+
+    .copyright {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    th {
+        font-size: 0.7em;
+        letter-spacing: 0.5px;
+    }
+} 
